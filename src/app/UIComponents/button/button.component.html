@@ -1,0 +1,6 @@
+<button class="button" [ngClass]="getClass()" (click)="button.onClick($event)">
+  <span class="icon"></span>
+  <span class="text">
+    <ng-content></ng-content>
+  </span>
+</button>

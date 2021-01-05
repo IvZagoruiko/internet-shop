@@ -1,0 +1,102 @@
+.button {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s;
+
+  .icon {
+    display: none;
+  }
+
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.search {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: none;
+
+    &:hover {
+      background: #3c3c3c;
+    }
+  }
+
+  &.buy {
+    display: flex;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    .icon {
+      width: 25px;
+      height: 100%;
+      margin-left: 17px;
+      display: inline;
+      background: url("/assets/icons/basket.svg") no-repeat;
+      background-position-y: center;
+      background-size: 21px;
+      filter: invert(83%) sepia(50%) saturate(1%) hue-rotate(304deg) brightness(112%) contrast(101%);
+    }
+
+    .text {
+      width: 100%;
+      padding-right: 38px;
+      transition: padding-right .3s;
+    }
+
+    &:hover {
+      background: #febd18;
+      color: #000;
+
+      .text {
+        padding-right: 28px;
+      }
+    }
+  }
+
+  &.basket {
+    display: flex;
+    align-items: center;
+    background: #febd18;
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: none;
+    transition: all .5s;
+
+    .icon {
+      width: 18px;
+      height: 100%;
+      margin-left: 7px;
+      display: inline;
+      background: url("/assets/icons/basket.svg") no-repeat;
+      background-position-y: center;
+      background-size: 18px;
+      filter: invert(7%) sepia(7%) saturate(0%) hue-rotate(233deg) brightness(97%) contrast(77%);
+    }
+
+    .text {
+      padding-left: 7px;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+  }
+}
